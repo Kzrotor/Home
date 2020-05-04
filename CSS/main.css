@@ -27,13 +27,13 @@ h6 {
 /* Home Button */
 
 .homeButton {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     opacity: 1;
     position: fixed;
     top: 70%;
-    left: 5px;
+    left: 6%;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -46,7 +46,7 @@ h6 {
 }
 
 .homeButton a {
-    margin-top: 33%;
+    margin-top: 20%;
 }
 
 .homeButton i {
@@ -550,6 +550,7 @@ span {
 }
 
 @media screen and (max-width: 992px) {
+
     .menu li {
         margin-right: 30px;
     }
@@ -565,8 +566,12 @@ span {
 
 
     .logo {
-         margin-left: 42%;
-         line-height: 36px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
     }
 
     h1 {
@@ -659,6 +664,14 @@ span {
 
 @media screen and (max-width: 600px) {
 
+    .started {
+        margin-top: 100px;
+    }
+
+    .btn__header {
+        margin-bottom: 100px;
+    }
+
     .firstBlock {
         width: 250px;
         height: 250px;
@@ -684,7 +697,55 @@ span {
     .title__workers p {
         font-size: 0.7rem;
     }
+
+    .date__blog h4 {
+        font-size: 1.1rem;
+    }
+
+    .date__blog p {
+        margin-top: 0;
+        margin-bottom: 0.6rem;
+        font-size: 12px;
+    }
+
+    .header {
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .work__touch {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .footer {
+        width: 100%;
+        margin-left: 0px;
+    }
    
+}
+
+/* Icons contacts */
+
+@media screen and (max-width: 479px) {
+    .icon__touch {
+        margin-top: -20px;
+    }
+
+    .form__input {
+        width: 280px;
+        margin-left: 0%;
+    }
+
+    .form__input:nth-child(5) {
+        width: 280px;
+        margin-left: 0%;
+    }
+
+    .btn__sendM {
+        width: 280px;
+        margin-left: 0%;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -701,5 +762,52 @@ span {
     .firstBlock i:nth-child(1) {
         margin-left: 10%;
     }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .img__content {
+        margin-left: 33%;
+    }
+
+    .img__works {
+        margin-left: 2%;
+        width: 96%;
+    }
+
+    .img {
+        width: 280px;
+    }
+
+    .menu__works {
+        flex-direction: column;
+    }
+
+    .menu__works {
+        margin-left: 2%;
+    }
    
+}
+
+@media screen and (max-width: 321px) {
+    .your__project button {
+        margin-top: 10px;
+    }
+
+    .img__content {
+        margin-left: 28%;
+    }
+
+    .menu__works {
+        margin-left: 2%;
+    }
 }
